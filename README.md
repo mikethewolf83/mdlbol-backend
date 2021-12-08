@@ -6,7 +6,7 @@ Lumen RESTful API application as a backend for MdlBol Frontend
 
 Follow the steps below for production
 
-1- Copy the .env.example file as .env
+1- Copy the .env.example file as .env if not exists
 
 2- Edit the .env file with the following options:
 ```bash
