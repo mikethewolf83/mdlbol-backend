@@ -44,7 +44,12 @@ Be sure to copy/paste the generated key (whithout the "base64:" part) in API_KEY
 ./artisan jwt:secret
 ```
 
-6- Create a virtual host config to point the public folder
+6- Run the following to install app dependencies
+```bash
+composer install
+```
+
+7- Create a virtual host config to point the public folder
 
 ## License
 
