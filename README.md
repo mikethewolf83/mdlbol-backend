@@ -44,7 +44,7 @@ Be sure to copy/paste the generated key (whithout the "base64:" part) in API_KEY
 ./artisan jwt:secret
 ```
 
-6- Create a virtual host config
+6- Create a virtual host config to point the public folder
 
 ## License
 
