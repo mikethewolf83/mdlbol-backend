@@ -2,9 +2,18 @@
 
 Lumen RESTful API application as a backend for MdlBol Frontend
 
+## App dependencies
+
+* Web server such as Apache HTTP Server or Nginx or any other with PHP support
+* PHP "^7.3|^8.0" with support for MariaDB or MySQL databases
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* MariaDB Server "^10.4" minimum, or MySQL "^5.7" minimum
+
 ## Installation and configuration
 
-Follow the steps below for production
+Follow the steps below for  a production environment
 
 1- Copy the .env.example file as .env if not exists
 
@@ -15,7 +24,7 @@ APP_ENV=production
 APP_KEY=
 APP_DEBUG=false
 APP_URL=
-APP_TIMEZONE=
+APP_TIMEZONE=America/Havana
 
 LOG_CHANNEL=stack
 LOG_SLACK_WEBHOOK_URL=
@@ -31,25 +40,27 @@ CACHE_DRIVER=file
 QUEUE_CONNECTION=sync
 ```
 
-3- Then create the API KEY for use in the .env file like this: 
+3- Be sure to declare de app URL in the APP_URL variable key
+
+4- Run the following to install app dependencies
+```bash
+composer install
+```
+
+5- Then create the API KEY for use in the .env file like this: 
 ```bash
 ./artisan key:generate
 ```
 Be sure to copy/paste the generated key (whithout the "base64:" part) in API_KEY variable
 
-4- Update the APP_ENV variable to production
+6- Update the APP_ENV variable to production
 
-5- Execute the following:
+7- Execute the following:
 ```bash
 ./artisan jwt:secret
 ```
 
-6- Run the following to install app dependencies
-```bash
-composer install
-```
-
-7- Create a virtual host config to point the public folder
+8- Create a virtual host config to point the public folder
 
 ## License
 
