@@ -11,7 +11,7 @@ Follow the steps below for production
 2- Edit the .env file with the following options:
 ```bash
 APP_NAME=mdlbol-backend
-APP_ENV=
+APP_ENV=production
 APP_KEY=
 APP_DEBUG=false
 APP_URL=
