@@ -30,6 +30,7 @@ DB_PASSWORD=
 CACHE_DRIVER=file
 QUEUE_CONNECTION=sync
 ```
+
 3- Then create the API KEY for use in the .env file like this: 
 ```bash
 ./artisan key:generate
@@ -42,6 +43,8 @@ Be sure to copy/paste the generated key (whithout the "base64:" part) in API_KEY
 ```bash
 ./artisan jwt:secret
 ```
+
+6- Create a virtual host config
 
 ## License
 
